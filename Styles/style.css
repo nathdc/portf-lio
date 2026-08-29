@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Krona+One&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd;
+    --cor-hover: #272727;
+}
+
+*{ margin: 0;
+  padding: 0;}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: #f6f6f6;
+}
+
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 80px;
+}
+
+
+.cabecalho_menu_link {
+    font-family: "Henny Penny", system-ui;
+    font-size: 1.5rem;
+    color:var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.titulo_destaque{
+    color: var(--cor-terciaria);
+}
+
+.apresentacao {
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao_conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao_conteudo_titulo {
+    font-size: 2.25rem;
+    font-family: "Henny Penny", system-ui;
+}
+
+.apresentacao_conteudo_texto {
+    font-size: 1.5rem;
+}
+
+
+.apresentacao_links {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+}
+
+.apresentacao_links_subtitulo {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem ;
+}
+
+.apresentacao_links_link {
+    /* background-color: #22D4FD; */
+    display:flex;
+    justify-content: center;
+    gap: 16px;
+    border: 1px solid var(--cor-terciaria); 
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color:var(--cor-secundaria);
+     }
+
+
+.apresentacao_links_link:hover {
+    background-color:var(--cor-hover);
+}
+
+.apresentacao_imagem {
+    width: 50%;
+}
+
+.rodape {
+    text-align: center;
+    color:var(--cor-primaria);
+    background-color: #22D4FD;
+    padding: 24px;
+    font-size: 1.375rem;
+    font-family: "Henny Penny", system-ui;
+}
+
+@media (max-width: 1200px ) {
+    .apresentacao { flex-direction: column-reverse;}
+}
